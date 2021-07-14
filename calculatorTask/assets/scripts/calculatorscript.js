@@ -74,9 +74,9 @@ document.addEventListener('keypress', (event) => {
         calculate()
     }
 
-    //clearing data by using escape key
+    //clearing data by using c key
 
-    if(keyPressedCode == 'Escape'){
+    if(keyPressed == 'c'){
         clearDisplay()
     }
     
