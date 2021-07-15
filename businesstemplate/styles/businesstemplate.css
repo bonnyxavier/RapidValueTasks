@@ -15,9 +15,41 @@ body {
     background-color: white;
 }
 
+.navContainer{
+    background-color:rgb(2, 17, 59);
+    overflow: hidden;
+}
+
+.navContainer a{
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.hamburger-icon{
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+}
+
+.navContainer .icon{
+    float: right;
+    display: none;
+}
 
 
-.navBar{
+
+
+
+
+
+
+/* .navBar{
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -41,14 +73,14 @@ body {
 }
 
 .navSection{
-    width:95%;
-}
+    width:100%;
+} */
 
-.facebook-icon{
+/* .facebook-icon{
 background-color: rgb(2, 17, 59);
 width: 5%;
 padding: 5px;
-}
+} */
 
 
 
@@ -194,5 +226,111 @@ img{
     color: green;
 } 
 
+.galleryForMobile{
+    display: none;
+}
+
+@media screen and (max-width: 900px){
+    .navContainer a {
+        display:none;
+    }
+    .navContainer .icon{
+        float: right;
+        display:block;
+    }
+}
+
+@media screen and (max-width: 900px){
+    
+    
+    .navContainer.clicked a{
+        display: block;
+        float: none;
+        text-align: left;
+    }
+    
+    .navContainer.clicked a.icon {
+        position:absolute;
+        right: 0;
+        top: 0;
+    }
+    .navContainer.clicked{
+        position:relative;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .main-block {
+        margin-top: 20px;
+        display : flex;
+        flex-direction: column;
+    }
+    
+}
+
+
+@media screen and (max-width: 900px){
+    
+    .container{
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+        margin-top: 20px;
+    }
+    
+    .textContainer{
+        display: flex;
+        flex-basis: content;
+        width: 100%;
+    
+    }
+    
+    .navigation{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .navigationHeader{
+        text-align: center;
+    }
+    
+    .navigationLinkBox{
+        width: 100%;    
+    }
+
+}
+
+
+@media screen and (max-width: 900px){
+    
+    .gallery-container{
+        display:none;
+    }
+  
+    /* .gallery{
+        text-align:  center;
+        margin-top: 50px;
+    }
+    .gallery-container{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    img{
+        width: 100%;
+    }
+     */
+    .carousel-gallery{
+        display:none;
+    }
+
+    .galleryForMobile{
+        display: inline;
+    }
+
+}
 
 
